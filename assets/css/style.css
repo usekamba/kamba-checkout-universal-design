@@ -1,0 +1,123 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #848484;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div {
+    padding: 16px;
+    padding-top: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    color: #848484;
+    text-align: center;
+}
+
+.checkout-card {
+    min-width: 380px;
+    max-width: 460px;
+    min-height: 552px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0 2px 3px 0 rgba(176,176,176,0.50);
+    border-radius: 8px;
+    padding: 0%;
+}
+
+.card-toolbar {
+    max-height: 40px;
+    padding: 2%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background-image: linear-gradient(-180deg, #47FE52 0%, #56C41D 100%);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.card-toolbar > ul {
+    list-style: none;
+}
+
+.card-toolbar > ul > li {
+    color: white;
+    float: left;
+    margin-right: 3%;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.card-toolbar > ul > li > a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.card-business-info > div {
+    height: 70px;
+    padding: 16px;
+}
+
+ .card-business-info > div > img {
+    width: 64px;
+    float: left;
+    margin-right: 16px;
+    margin-top: 10px;
+ }
+
+ .card-business-info > div > ul {
+     
+ }
+
+ .business-name {
+     color: #848484;
+     margin-bottom: 8px;
+ }
+
+ .checkout-amount {
+     color: black;
+     font-weight: bolder;
+ }
+
+hr {
+    background-color: #EFEFEF;
+    height: 1px;
+    border: none;
+}
+
+.checkout-qr-code {
+    border: 1px solid black;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.how-to {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+}
+
+.icon {
+    margin-right: 8px;
+}
