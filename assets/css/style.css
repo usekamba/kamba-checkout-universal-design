@@ -60,6 +60,11 @@ p {
 
 .title {
     font-weight: bold;
+    cursor: none;
+}
+
+.title:hover {
+    cursor: default;
 }
 
 .card-toolbar > ul > li > a {
@@ -86,7 +91,11 @@ p {
 
  .business-name {
      color: #848484;
-     margin-bottom: 8px;
+     margin-bottom: 4px;
+ }
+
+ .business-info { 
+    font-size: 1.2rem;
  }
 
  .checkout-amount {
@@ -181,6 +190,11 @@ hr {
     border-radius: 4px;
 }
 
+.img-pay-logo {
+    width: 52px;
+    height: 28px;
+}
+
 button, input, optgroup, select, textarea {
     font-family: inherit;
 }
@@ -202,23 +216,17 @@ button {
 }
 
 #mobileshow { 
-    display:none; 
+    display: none; 
 }
 
-@media (min-width: 1281px) {
-        
+@media (min-width: 500px) {     
     #desktopshow { 
         display: block; 
     }
 }
     
 @media screen and (max-width: 500px) {
-        
     #mobileshow { 
-        display:block; 
-    }
-    
-    .kamba-logo {
-        display: none;
+        display: block; 
     }
 }
