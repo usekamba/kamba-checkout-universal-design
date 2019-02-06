@@ -7,14 +7,15 @@
         <link rel='stylesheet' href='assets/css/style.css'>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </header>
     <body>
-        <div class='center checkout-card'>
+        <div class='checkout-card'>
             <div class='card-toolbar'>
                 <ul class='container'>
-                    <li><a href=''>Cancelar</a></li>
+                    <li><a href='' title = 'Sair do pagamento'>Cancelar</a></li>
                     <li><a class='title' href='#'>Nova transaction</a></li>
-                    <li><a href=''>Como pagar?</a></li>
+                    <!-- <li><a href=''>Como pagar?</a></li> -->
                 </ul>
             </div>
             <div class='card-business-info'>
@@ -28,17 +29,19 @@
             </div>
             <hr>
             <div class=''>
-                <p>Curso de programação Android Avançado</p>
-                <img id='desktopshow' class ='checkout-qr-code' src='assets/img/qr_code.jpg'/>
-                <p>Expira em 06/03/2019 às 19:01</p>
+                <p class="product-note">Curso de programação Android Avançado</p>
+                <img class ='checkout-qr-code' src='assets/img/qr_code.jpg'/>
+                <p class="date-expiration-product">Expira em 06/03/2019 às 19:01</p>
                 <p id='desktopshow' class='how-to checkout-amount'>
                     Abra a sua Carteira Kamba e escaneie o código de pagamento
                 </p>
-                <a id="mobileshow" href="#" class="btnOpenWidgetKamba button large course-button">Clica para pagar com Kamba 
-                    <img class="img-pay-logo logo hide-for-medium-down" src="assets/img/PayLogo-kamba.png"></a>
-                <div class=''>
-                    <img class='logo' src='assets/img/kamba-logo.png' />
+                <div id="mobileshow" class="openAppKamba">
+                <a href="#" class="btnKamba">Clica para pagar com Kamba 
+                    <img class="btnImgPayKamba" src="assets/img/PayLogo-kamba.png"></a>
+                </div>
+                <div class='securite'>
                     <p class='checkout-amount'><i class='icon fas fa-lock checkout-amount'></i>Conexão segura</p>
+                    <img class='logo' src='assets/img/kamba-logo.png' />
                 </div>
             </div>
         </div>

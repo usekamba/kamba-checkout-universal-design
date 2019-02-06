@@ -1,16 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: #848484;
-}
-
-.center {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-div {
-    padding: 16px;
-    padding-top: 0px;
+    background-color: rgba(0,0,0,.75);
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
 }
 
 li {
@@ -23,29 +26,25 @@ p {
 }
 
 .checkout-card {
-    min-width: 380px;
-    max-width: 460px;
-    min-height: 552px;
+    width:100%;
+    height: 100%;
     background: #FFFFFF;
     border: 1px solid #FFFFFF;
     box-shadow: 0 2px 3px 0 rgba(176,176,176,0.50);
-    border-radius: 8px;
     padding: 0%;
+    margin: 0;
 }
 
 .card-toolbar {
-    max-height: 40px;
-    padding: 2%;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
+    height: 1rem;
+    padding: 1rem;
     background-image: linear-gradient(-180deg, #47FE52 0%, #56C41D 100%);
 }
 
 .container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: inherit;
 }
 
 .card-toolbar > ul {
@@ -54,8 +53,11 @@ p {
 
 .card-toolbar > ul > li {
     color: white;
-    float: left;
-    margin-right: 3%;
+}
+
+.card-toolbar > ul > li:first-child {
+    margin-right: 3rem;
+    cursor: pointer;
 }
 
 .title {
@@ -74,19 +76,14 @@ p {
 }
 
 .card-business-info > div {
-    height: 70px;
-    padding: 16px;
+    height: 4rem;
+    padding: 1.5rem 1rem 1rem 1rem;
 }
 
  .card-business-info > div > img {
-    width: 64px;
+    width: 4rem;
     float: left;
-    margin-right: 16px;
-    margin-top: 10px;
- }
-
- .card-business-info > div > ul {
-     
+    margin-right: 1rem;
  }
 
  .business-name {
@@ -109,22 +106,63 @@ hr {
     border: none;
 }
 
+.product-note {
+    position: relative;
+    padding: 1rem 0;
+}
+
+.date-expiration-product {
+    font-size: 0.8rem;
+    margin: 0.5rem 0 2rem 0;
+}
+
 .checkout-qr-code {
     border: 1px solid black;
-    width: 200px;
+    width: 52%;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
 .how-to {
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.openAppKamba {
+    padding: 1.5rem 1rem 0.5rem 1rem;
+  }
+
+a.btnKamba {
+    background-image: linear-gradient(to left, rgb(0, 255, 179), rgb(0, 255, 95))!important;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 0.3rem;
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .btnImgPayKamba {
+    width: 15%;
+    height: 15%;
+    margin-left: 0.5rem;
+  }
+
+.securite {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
 }
 
 .logo {
-    width: 32px;
-    height: 32px;
+    width: 13px;
+    height: 20px;
+    padding-left: 1rem;
 }
 
 .icon {
@@ -148,7 +186,7 @@ hr {
 
 .logo {
     width: 33px;
-    display: inline;
+    display: none;
     float: left;
 }
 
@@ -191,8 +229,7 @@ hr {
 }
 
 .img-pay-logo {
-    width: 52px;
-    height: 28px;
+    width: 5%;
 }
 
 button, input, optgroup, select, textarea {
@@ -211,22 +248,27 @@ button {
     cursor: auto;
 }
 
-#desktopshow {
-    display: none;
-}
 
-#mobileshow { 
-    display: none; 
-}
-
-@media (min-width: 500px) {     
-    #desktopshow { 
-        display: block; 
+@media only screen and (min-width: 40.063em) {
+    .checkout-card {
+        width: 22rem;
+        height: 35rem;
     }
-}
+
+    .checkout-card {
+        border-radius: 8px;
+    }
     
-@media screen and (max-width: 500px) {
-    #mobileshow { 
-        display: block; 
+    .card-toolbar {
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
     }
-}
+
+    #mobileshow { 
+        display: none; 
+    }
+
+    .logo {
+        display: inline;
+    }
+} /* min-width 641px, medium screens */
